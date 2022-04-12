@@ -14,15 +14,6 @@ def on_press(key):
 
     print(f"Received {data!r}")
 
-
-"""def on_release(key):
-    print('Key released: {0}'.format(
-        key))
-    if key == keyboard.Key.esc:
-        # Stop listener
-        return False
-"""
-# on_release=on_release)
 with keyboard.Listener(
         on_press=on_press) as listener:
     listener.join()
